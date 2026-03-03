@@ -28,6 +28,7 @@ import { registerVestingCommands } from './commands/vesting';
 import { registerChannelCommands } from './commands/channel';
 import { registerRoleCommands } from './commands/role';
 import { registerMonitorCommands } from './commands/monitor';
+import { registerProductCommands } from './commands/product';
 import { registerAttestationCommand } from 'openclaw';
 
 /**
@@ -64,5 +65,6 @@ export function registerCommands(program: Command): void {
   registerChannelCommands(program);
   registerRoleCommands(program);
   registerMonitorCommands(program);
+  registerProductCommands(program);
   registerAttestationCommand(program);
 }
